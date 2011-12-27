@@ -12,7 +12,7 @@ body {
 
 #main_wrapper {
 	width: 612px;
-	margin: 20px 40px;
+	margin: 30px 0px 60px 60px;
 }
 
 
@@ -113,26 +113,39 @@ nav a:hover {
 
 /*=== LAYOUT */
 #blogroll {
-	margin: 30px 0px;
-	background: #fff url('../images/blogroll_bg.png');
-	/*border: solid 5px #ddd;*/
+	background: #fff url('../images/blogroll_bg.png') top left repeat-y;
 	padding: 50px 62px 50px 50px;
+	position: relative;
+	margin-top: 30px;
+}
+
+#blogroll:after {
+	position: absolute;
+	top: 0px;
+	left: -612px;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: red;
+	content: '';
+	background: transparent url('../images/page_left.png') top right repeat-y;
+	border-right: solid 1px #54544d;
 }
 
 
 /*=== POSTS */
 	.post {
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 	}
 
 	.post:after {
 		content: '•••';
 		font-size: 200%;
-		color: #ddd;
+		color: #aaa;
 		letter-spacing: 0.2em;
 		text-align: center;
 		display: block;
-		padding-top: 25px;
+		padding-top: 30px;
 		clear: both;
 		float: none;
 	}
@@ -201,9 +214,9 @@ nav a:hover {
 
 		/*=== PHOTO POST */
 		.photo_post {
-			width: 494px;
+			width: 500px;/*
 			padding: 2px;
-			border: solid 1px #aaa;
+			border: solid 1px #aaa;*/
 			margin: 0px auto;
 		}
 
@@ -211,7 +224,7 @@ nav a:hover {
 			border: none;
 			padding: 0px;
 			display: block;
-			max-width: 494px;
+			max-width: 500px;
 			margin: 0px auto;
 		}
 
@@ -277,13 +290,13 @@ nav a:hover {
 	.post_when {
 		margin-right: 10px;
 		background: url('../images/post_footer.png') 6px -38px no-repeat;
-		padding-left: 24px !important;
+		padding-left: 23px !important;
 	}
 
 	.post_when:hover {
 		margin-right: 10px;
 		background: url('../images/post_footer.png') 6px -57px no-repeat;
-		padding-left: 24px !important;
+		padding-left: 23px !important;
 		border-color: #BF4D28;
 		color: #BF4D28;
 	}
