@@ -1,0 +1,11 @@
+#blogroll {
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, .75);
+}
+
+#blogroll:after {
+	box-shadow: -5px 10px 30px rgba(0, 0, 0, .75);
+}
+
+.post_footer a {
+	border-radius: 100px;
+}
