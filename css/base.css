@@ -60,6 +60,7 @@ blockquote:before {
 blockquote:after {
 	content: '”';
 	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 
@@ -262,6 +263,32 @@ nav a:hover {
 			color: #BF4D28;
 		}
 
+		/*=== CHAT POST*/
+		.chat_post {
+			padding: 0px;
+			margin-left: 22px;
+		}
+
+		.chat_post li {
+			list-style: none;
+			line-height: 225%;
+		}
+
+		.chat_label {
+			background: #BF4D28;
+			color: #fff;
+			padding: 2px 3px;
+			margin-right: 5px;
+			border-radius: 3px;
+		}
+
+		/*=== AUDIO POST*/
+		.audio_post {
+			border: solid 1px #BF4D28;
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+
 
 	/*=== POST FOOTER*/
 	.post_footer {
@@ -311,4 +338,6 @@ nav a:hover {
 		padding-left: 24px !important;
 		border-color: #BF4D28;
 		color: #BF4D28;
-	} 
+	}
+
+/*=== PAGINATION*/
